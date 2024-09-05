@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="appSqliteDataBase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DataBase Manager Productos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oev-Q8-CKK">
+                                <rect key="frame" x="20" y="64" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vo-Ew-NnW">
+                                <rect key="frame" x="104" y="832" width="63" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="89v-It-4Qf"/>
+                                </constraints>
+                                <state key="normal" title="Borrar"/>
+                                <connections>
+                                    <action selector="btnBorrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CGe-ok-nVb"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="ZUi-96-1OW">
+                                <rect key="frame" x="20" y="102" width="374" height="662"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCI-O2-YYQ">
+                                <rect key="frame" x="20" y="832" width="76" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="Pvg-jM-OwA"/>
+                                </constraints>
+                                <state key="normal" title="Actualizar"/>
+                                <connections>
+                                    <action selector="btnActualizar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ep1-CT-plo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLp-wy-EXe">
+                                <rect key="frame" x="327" y="832" width="67" height="30"/>
+                                <state key="normal" title="Consultar"/>
+                                <connections>
+                                    <action selector="btnConsultar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sE2-dD-bX1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFa-6c-enL">
+                                <rect key="frame" x="192" y="832" width="101" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="101" id="izP-5b-zMG"/>
+                                </constraints>
+                                <state key="normal" title="Insertar"/>
+                                <connections>
+                                    <action selector="btnInsertar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fKO-pw-n1O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oev-Q8-CKK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="0hR-lv-oID"/>
+                            <constraint firstItem="7vo-Ew-NnW" firstAttribute="baseline" secondItem="vLp-wy-EXe" secondAttribute="baseline" id="1Yr-XM-R4W"/>
+                            <constraint firstItem="CCI-O2-YYQ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5IK-pF-vXn"/>
+                            <constraint firstItem="ZUi-96-1OW" firstAttribute="trailing" secondItem="vLp-wy-EXe" secondAttribute="trailing" id="6SI-Rh-adG"/>
+                            <constraint firstItem="oev-Q8-CKK" firstAttribute="leading" secondItem="ZUi-96-1OW" secondAttribute="leading" id="CeX-Sk-ODQ"/>
+                            <constraint firstItem="ZUi-96-1OW" firstAttribute="leading" secondItem="CCI-O2-YYQ" secondAttribute="leading" id="D7q-qa-gGF"/>
+                            <constraint firstItem="ZUi-96-1OW" firstAttribute="top" secondItem="oev-Q8-CKK" secondAttribute="bottom" constant="8" id="G4h-DY-BcX"/>
+                            <constraint firstItem="oev-Q8-CKK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="OMw-n1-rUO"/>
+                            <constraint firstItem="eFa-6c-enL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="192" id="P4B-uQ-zSC"/>
+                            <constraint firstItem="CCI-O2-YYQ" firstAttribute="top" secondItem="ZUi-96-1OW" secondAttribute="bottom" constant="68" id="SkT-wZ-ThB"/>
+                            <constraint firstItem="oev-Q8-CKK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="UUT-f4-Xkc"/>
+                            <constraint firstItem="CCI-O2-YYQ" firstAttribute="baseline" secondItem="eFa-6c-enL" secondAttribute="baseline" id="bG1-aE-ONd"/>
+                            <constraint firstItem="oev-Q8-CKK" firstAttribute="trailing" secondItem="ZUi-96-1OW" secondAttribute="trailing" id="mpG-8B-QLW"/>
+                            <constraint firstAttribute="trailing" secondItem="7vo-Ew-NnW" secondAttribute="trailing" constant="247" id="tbZ-Ou-pjb"/>
+                            <constraint firstItem="eFa-6c-enL" firstAttribute="baseline" secondItem="7vo-Ew-NnW" secondAttribute="baseline" id="xKK-fq-69S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnActualizar" destination="CCI-O2-YYQ" id="qBp-YR-nqW"/>
+                        <outlet property="btnBorrar" destination="7vo-Ew-NnW" id="M1G-A0-PmT"/>
+                        <outlet property="btnInsertar" destination="eFa-6c-enL" id="3W9-IP-5Fe"/>
+                        <outlet property="mostrarProductos" destination="ZUi-96-1OW" id="b9Y-Ts-i8r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.43478260869566" y="86.383928571428569"/>
+        </scene>
+    </scenes>
+</document>
